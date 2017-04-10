@@ -16,5 +16,6 @@ LOG_FORMAT = logging.Formatter(
     ('%(asctime)s hambot %(levelname)s %(name)s.%(funcName)s:%(lineno)d - '
      '%(message)s'))
 
-ERRORS_TO = os.environ.get('ERRORS_TO', 'gba')
+ERRORS_TO = os.environ.get('ERRORS_TO', 'ly2en')
 DEBUG_HAMBOT = bool(os.environ.get('DEBUG_HAMBOT'))
+SLACK_KEY = os.environ.get('SLACK_KEY')

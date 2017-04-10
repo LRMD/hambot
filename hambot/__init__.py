@@ -3,7 +3,7 @@
 
 """HamBot Package."""
 
-from .constants import (LOG_LEVEL, LOG_FORMAT, ERRORS_TO, DEBUG_HAMBOT)  # NOQA
+from .constants import (LOG_LEVEL, LOG_FORMAT, ERRORS_TO, DEBUG_HAMBOT, SLACK_KEY)  # NOQA
 
 __author__ = 'Greg Albrecht W2GMD <oss@undef.net>'
 __copyright__ = 'Copyright 2017 Greg Albrecht'

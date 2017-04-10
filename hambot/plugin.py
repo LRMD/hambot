@@ -7,6 +7,7 @@ import re
 
 import slackbot
 import requests
+import hambot
 
 __author__ = 'Greg Albrecht W2GMD <oss@undef.net>'
 __copyright__ = 'Copyright 2017 Greg Albrecht'
@@ -25,6 +26,7 @@ def call(message, callsign):
     :param message: Received message.
     :param callsign: Callsign to lookup.
     """
-    request = requests.get('https://callook.info/{}/text'.format(callsign))
+
+    request = requests.get('http://hamradio.lt/adresai_ws.php?pass={}&saukinys={}'.format(hambot.SLACK_KEY,callsign))
     if request.ok:
         message.reply('```' + request.content + '```')
