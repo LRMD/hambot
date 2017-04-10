@@ -29,4 +29,4 @@ def call(message, callsign):
 
     request = requests.get('http://hamradio.lt/adresai_ws.php?pass={}&saukinys={}'.format(hambot.SLACK_KEY,callsign))
     if request.ok:
-        message.reply('```' + request.content + '```')
+        message.reply(request.content.decode('cp1257'))
