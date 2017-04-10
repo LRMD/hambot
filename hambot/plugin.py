@@ -14,7 +14,7 @@ __copyright__ = 'Copyright 2017 Greg Albrecht'
 __license__ = 'Apache License, Version 2.0'
 
 
-@slackbot.bot.respond_to('call (.*)', re.IGNORECASE)
+@slackbot.bot.respond_to('kas (.*)', re.IGNORECASE)
 def call(message, callsign):
     """
     Looks up a callsign when receiving a message of the format:
